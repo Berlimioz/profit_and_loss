@@ -1,0 +1,29 @@
+%h1= @report.name
+%h2 Du #{display_date(@report.from_date)} inclu au #{display_date(@report.to_date)} exclu
+
+%h2
+  Résultat :
+  %span{class: @total_result >= 0 ? 'green' : 'red'} #{@total_result} €
+
+%h2
+  Les coûts :
+  %strong #{@loss_total} €
+
+%ul
+  - @report.loss_entries.each do |entry|
+    %li #{entry.name} : #{entry.display_ttc_price}
+
+%h2
+  Les profits :
+  %strong #{@profit_total} €
+
+%ul
+  - @report.profit_entries.each do |entry|
+    %li #{entry.name} : #{entry.display_ttc_price}
+  %li #{@profit_objects.count} entrées : #{@profit_objects_total} €
+
+= link_to "Retour", reports_path
+%br
+%br
+%br
+= link_to "Supprimer", report_path(@report), method: :delete, data:{ confirm: "Sûr(e)?"}

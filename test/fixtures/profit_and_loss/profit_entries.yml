@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  ttc_price_in_cents: 1
+  information: MyText
+
+two:
+  name: MyString
+  ttc_price_in_cents: 1
+  information: MyText

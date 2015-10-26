@@ -1,0 +1,5 @@
+%h1 Les rapports
+= link_to "Ajouter un rapport", new_report_path
+%ul
+  - @reports.each do |report|
+    %li= link_to "#{report.name} : #{report.total_result}", report_path(report)

@@ -1,0 +1,18 @@
+= simple_form_for @report do |f|
+  = f.input :name
+  = f.input :from_date
+  = f.input :to_date
+
+  = f.simple_fields_for :profit_loss_entries do |ple|
+    = ple.input :name, as: :hidden
+    = ple.input :ttc_price_in_cents, as: :hidden
+    = ple.input :report_id, as: :hidden
+    .flex
+      %div
+        = ple.input (ple.object.profit_entry_id.present? ? :profit_entry_id : :cost_entry_id), as: :boolean, label: false
+      %div
+        = ple.object.name
+        = (ple.object.ttc_price_in_cents || 0) / 100.0
+
+  = f.button :submit
+

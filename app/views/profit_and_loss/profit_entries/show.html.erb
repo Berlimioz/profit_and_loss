@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @profit_entry.name %>
+</p>
+
+<p>
+  <strong>Ttc price in cents:</strong>
+  <%= @profit_entry.ttc_price_in_cents %>
+</p>
+
+<p>
+  <strong>Information:</strong>
+  <%= @profit_entry.information %>
+</p>
+
+<%= link_to 'Edit', edit_profit_entry_path(@profit_entry) %> |
+<%= link_to 'Back', profit_entries_path %>
