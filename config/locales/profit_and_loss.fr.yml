@@ -1,0 +1,88 @@
+fr:
+  date:
+    abbr_day_names:
+      - dim
+      - lun
+      - mar
+      - mer
+      - jeu
+      - ven
+      - sam
+    abbr_month_names:
+      - ~
+      - jan.
+      - fév.
+      - mar.
+      - avr.
+      - mai
+      - juin
+      - juil.
+      - août
+      - sept.
+      - oct.
+      - nov.
+      - déc.
+    day_names:
+      - dimanche
+      - lundi
+      - mardi
+      - mercredi
+      - jeudi
+      - vendredi
+      - samedi
+    formats:
+      default: "%d/%m/%Y"
+      short: "%e %b"
+      long: "%e %B %Y"
+    month_names:
+      - ~
+      - janvier
+      - février
+      - mars
+      - avril
+      - mai
+      - juin
+      - juillet
+      - août
+      - septembre
+      - octobre
+      - novembre
+      - décembre
+    order:
+      - :day
+      - :month
+      - :year
+  profit_and_loss:
+    are_you_sure: "Êtes-vous sûr(e) ?"
+    back: Retour
+    edit: Modifier
+    show: Voir
+    cost_and_profit_entries:
+      index:
+        title: "Profit and Loss : l'outil"
+    cost_entries:
+      cost_entries:
+        title: Liste des coûts
+        show_cost_entry: Voir
+        edit_cost_entry: Modifier
+        destroy_cost_entry: Supprimer
+        new_cost_entry: Ajouter un coût
+      new:
+        title: Ajouter un coût
+      edit:
+        title: Modifier le coût
+        comments: Les commentaires
+    profit_entries:
+      profit_entries:
+        title: Liste des sources de profit
+        show_profit_entry: Voir
+        edit_profit_entry: Modifier
+        destroy_profit_entry: Supprimer
+        new_profit_entry: Ajouter une source de profit
+      new:
+        title: Ajouter une source de profit
+      edit:
+        title: Modifier la source de profit
+    comments:
+      form:
+        title: Ajouter un commentaire

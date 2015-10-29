@@ -1,0 +1,19 @@
+en:
+  activerecord:
+    errors:
+      models:
+        cost_entry:
+          attributes:
+            name:
+              blank: Name cannot be blank
+    models:
+      cost_entry: Cost entry
+    attributes:
+      cost_entry:
+        name: Name
+        information: Information
+        ttc_price: Price
+      profit_entry:
+        name: Name
+        information: Information
+        ttc_price: Price

@@ -1,37 +1,38 @@
-en:
+fr:
   helpers:
     submit:
       create: "Ok"
       update: "Ok"
       cost_entry:
-        create: "Add the cost entry"
-        update: Update
+        create: "Ajouter le coût"
+        update: Enregistrer
       profit_entry:
-        create: "Add the profit entry"
-        update: Update
+        create: "Enregistrer la source de profit"
+        update: Enregistrer
   simple_form:
-    "yes": 'Yes'
-    "no": 'No'
+    "yes": 'Oui'
+    "no": 'Non'
     required:
-      text: 'required'
+      text: 'obligatoire'
       mark: '*'
       # You can uncomment the line below if you need to overwrite the whole required html.
       # When using html, text and mark won't be used.
       # html: '<abbr title="required">*</abbr>'
     error_notification:
-      default_message: "Please review the problems below:"
+      default_message: "Merci de régler les problèmes suivants:"
+    # Examples
     labels:
       defaults:
-        name: Name
+        name: Nom
       cost_entry:
-        information: Information about the cost
-        ttc_price: Price
+        information: Information sur le coût
+        ttc_price: Prix TTC
       profit_entry:
-        information: Information about the profit entry
-        ttc_price: Price
+        information: Information sur la source de profit
+        ttc_price: Prix TTC
       comment:
-        text: Text
-    # Examples
+        text: Texte
+
     # hints:
     #   defaults:
     #     username: 'User name to sign in.'

@@ -1,0 +1,18 @@
+%h1=t('.title')
+%table
+  %thead
+    %tr
+      %th= t('activerecord.attributes.profit_entry.name')
+      %th= t('activerecord.attributes.profit_entry.ttc_price')
+      %th{colspan: 3}
+  %tbody
+    - @profit_entries.each do |profit_entry|
+      %tr
+        %td= profit_entry.name
+        %td= profit_entry.display_ttc_price
+        %td= link_to t('.show_profit_entry'), profit_entry
+        %td= link_to t('.edit_profit_entry'), edit_profit_entry_path(profit_entry)
+        %td= link_to t('.destroy_profit_entry'), profit_entry, method: :delete, data: { confirm: t('profit_and_loss.are_you_sure') }
+%br
+
+= link_to t('.new_profit_entry'), new_profit_entry_path

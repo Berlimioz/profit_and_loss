@@ -1,0 +1,25 @@
+%p#notice= notice
+
+%p
+  %strong
+    = t('activerecord.attributes.cost_entry.name')
+    \:
+  = @cost_entry.name
+%p
+  %strong
+    = t('activerecord.attributes.cost_entry.information')
+    \:
+  = @cost_entry.information
+%p
+  %strong
+    = t('activerecord.attributes.cost_entry.ttc_price')
+    \:
+  = @cost_entry.display_ttc_price
+
+
+= render "profit_and_loss/comments/form"
+= render @cost_entry.comments
+%br
+= link_to t('profit_and_loss.edit'), edit_cost_entry_path(@cost_entry)
+\|
+= link_to t('profit_and_loss.back'), cost_and_profit_entries_path

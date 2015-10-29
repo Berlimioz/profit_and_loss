@@ -1,0 +1,9 @@
+%h1= t('.title')
+
+= render 'form'
+
+%h3= t('.comments')
+= render @cost_entry.comments
+%br
+= link_to t('profit_and_loss.show'), @cost_entry |
+= link_to t('profit_and_loss.back'), cost_and_profit_entries_path

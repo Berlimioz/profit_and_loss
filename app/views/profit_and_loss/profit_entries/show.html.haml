@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %strong
+    = t('activerecord.attributes.profit_entry.name')
+    \:
+    = @profit_entry.name
+%p
+  %strong
+    = t('activerecord.attributes.profit_entry.information')
+    \:
+    = @profit_entry.information
+%p
+  %strong
+    = t('activerecord.attributes.profit_entry.ttc_price')
+    \:
+    = @profit_entry.display_ttc_price
+%br
+= link_to t('profit_and_loss.edit'), edit_profit_entry_path(@profit_entry)
+\|
+= link_to t('profit_and_loss.back'), cost_and_profit_entries_path

@@ -1,0 +1,21 @@
+fr:
+  activerecord:
+    errors:
+      models:
+        cost_entry:
+          attributes:
+            name:
+              blank: Le nom doit être renseigné
+
+    models:
+      cost_entry: Coût
+    attributes:
+      cost_entry:
+        name: Nom
+        information: Information
+        ttc_price: Prix TTC
+      profit_entry:
+        name: Nom
+        information: Information
+        ttc_price: Prix TTC
+
