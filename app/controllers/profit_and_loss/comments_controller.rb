@@ -6,7 +6,7 @@ module ProfitAndLoss
       @cost_entry = CostEntry.find(params[:cost_entry_id])
       @comment = @cost_entry.comments.create(comment_params)
       flash[:notice] = "Comment has been created!"
-      redirect_to cost_entries_path
+      redirect_to cost_and_profit_entries_path
     end
 
     private

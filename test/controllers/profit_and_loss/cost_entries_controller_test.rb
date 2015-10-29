@@ -46,7 +46,7 @@ module ProfitAndLoss
         delete :destroy, id: @cost_entry
       end
 
-      assert_redirected_to cost_entries_path
+      assert_redirected_to cost_and_profit_entries_path
     end
   end
 end
