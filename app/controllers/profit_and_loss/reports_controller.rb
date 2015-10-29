@@ -34,7 +34,7 @@ module ProfitAndLoss
     def destroy
       @report.profit_loss_entries.destroy_all
       @report.destroy
-      redirect_to reports_url, notice: "Le rapport a été supprimé."
+      redirect_to cost_and_profit_entries_path, notice: "Le rapport a été supprimé."
     end
 
     private

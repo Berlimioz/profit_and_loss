@@ -45,7 +45,7 @@ module ProfitAndLoss
     # DELETE /cost_entries/1
     def destroy
       @cost_entry.destroy
-      redirect_to cost_entries_url, notice: 'Cost entry was successfully destroyed.'
+      redirect_to cost_and_profit_entries_path, notice: 'Cost entry was successfully destroyed.'
     end
 
     private
